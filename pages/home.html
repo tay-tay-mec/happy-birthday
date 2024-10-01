@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../scripts/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../images/logo.png" class="logo" height="150px" width="150px">
+            <ul>
+                <li><a href="home.html"><i class="fa fa-home" aria-hidden="true">Home</i></a></li>
+                <li><a href="page2.html"><i class="fa fa-heart" aria-hidden="true">Love U</i></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="leftcom">
+                <h1>WITH YOU <br> I COULD NEVER <br> BE ALONE</h1>
+            </div>
+            <div class="rightcom">
+                <p>Jeremy</p>
+                <img src="../images/play.png" height="100px" width="100px" id="icon">
+            </div>
+        </div>
+    </div>
+    <audio id="mySong">
+        <source src="../sound/jeremy.mp3" type="audio/mp3">
+    </audio>
+
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function (){
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "../images/pause.png";
+        }else{
+            mySong.pause();
+            icon.src = "../images/play.png";
+        }
+    }
+</script>
+
+</body>
