@@ -2,12 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../scripts/style.css"/>
+    <link rel="stylesheet" href="../scripts/style-2.css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday</title>
 </head>
 <body>
-    <div class="container2">
+    <div class="container">
         <div class="navbar">
             <img src="../images/logo.png" class="logo" height="150px" width="150px">
             <ul>
@@ -17,10 +17,10 @@
         </div>
         <div class="content">
             <div class="leftcom">
-                <h1>“I don't <br> need drugs <br> to make my life <br> tragic.”</h1>
+                <h1> <strong>the love received <br> is the love <br> that is saved</strong></h1>
             </div>
             <div class="rightcom">
-                <p>Ten Album</p>
+                <p>ten</p>
                 <img src="../images/play.png" height="100px" width="100px" id="icon">
             </div>
         </div>
@@ -28,16 +28,17 @@
     <audio id="mySong">
         <source src="../sound/ten.mp3" type="audio/mp3">
     </audio>
+
 <script>
-    var mySong = document.getElementById("mySong");
+    var mySong1 = document.getElementById("mySong");
     var icon = document.getElementById("icon");
 
     icon.onclick = function (){
-        if(mySong.paused){
-            mySong.play();
+        if(mySong1.paused){
+            mySong1.play();
             icon.src = "../images/pause.png";
         }else{
-            mySong.pause();
+            mySong1.pause();
             icon.src = "../images/play.png";
         }
     }
