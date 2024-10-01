@@ -12,7 +12,7 @@ background-position: center;
 position: relative;
 }
 .container2{
-    height: 100vh;
+    height: 10vh;
     width: 100%;
     background-image: url(../images/eddievedder.jpg);
     background-size: cover;
@@ -38,7 +38,7 @@ position: relative;
 }
 .navbar ul li a{
     text-decoration: none;
-    color: #161616;
+    color: #ffffff;
     font-size: 1em;
 }
 .content{
@@ -50,10 +50,11 @@ position: relative;
     margin-left: 6%;
 }
 .leftcom h1{
-    font-size: 6em;
-    color: #161616;
+    font-size: 1em;
+    color: #ffffff;
     line-height: 100px;
     float: left;
+    padding-top: 5%;
 }
 .rightcom{
     float: right;
@@ -63,8 +64,8 @@ position: relative;
     align-items: center;
 }
 .rightcom p{
-    font-size: 2em;
-    color: #161616;
+    font-size: 1em;
+    color: #ffffff;
     font-weight: 400;
     margin-right: 3%;
 }
